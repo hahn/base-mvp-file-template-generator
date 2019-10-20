@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<template format="4"
+        revision="1"
+        name="BaseMVP Template Fragment"
+        description="Creates a new MVP classes - Presenter, View and Module">
+
+    <category value="Other"/>
+
+    <parameter id="className"
+        name="Fragment name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="MainMvp"
+        help="Don't include Fragment in the name class"/>
+
+    <parameter
+        id="layoutName"
+        name="Layout Name"
+        type="string"
+        constraints="layout|unique|nonempty"
+        default="fragment_main_mvp"
+        suggest="fragment_${classToResource(className)}"
+        help="The name of the layout to create for the fragment" />
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
