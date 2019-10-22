@@ -5,8 +5,8 @@ import android.content.Intent
 import android.os.Bundle
 import dagger.android.AndroidInjection
 import javax.inject.Inject
-import id.infokes.app.R
-import id.infokes.app.feature.base.BaseMvpActivity
+import ${applicationPackage}.R
+import ${applicationPackage}.feature.base.BaseMvpActivity
 
 /*
 * After activity created, you must:

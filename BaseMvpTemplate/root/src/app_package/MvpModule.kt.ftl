@@ -2,7 +2,7 @@ package ${escapeKotlinIdentifiers(packageName)}
 
 import dagger.Module
 import dagger.Provides
-import id.infokes.app.core.di.PerFeature
+import ${applicationPackage}.core.di.PerFeature
 
 @Module
 class ${className}Module {
