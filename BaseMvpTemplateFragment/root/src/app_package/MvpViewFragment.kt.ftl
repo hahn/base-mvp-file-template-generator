@@ -6,8 +6,8 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import dagger.android.support.AndroidSupportInjection
 import javax.inject.Inject
-import id.infokes.app.R
-import id.infokes.app.feature.base.BaseMvpFragment
+import ${applicationPackage}.R
+import ${applicationPackage}.feature.base.BaseMvpFragment
 import kotlinx.android.synthetic.main.${layoutName}.*
 
 /*

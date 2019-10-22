@@ -1,6 +1,6 @@
 package ${escapeKotlinIdentifiers(packageName)}
 
-import id.infokes.app.feature.base.MvpView
+import ${applicationPackage}.feature.base.MvpView
 
 
 interface ${className}View: MvpView {

@@ -1,6 +1,6 @@
 package ${escapeKotlinIdentifiers(packageName)}
 
-import id.infokes.app.feature.base.BasePresenter
+import ${applicationPackage}.feature.base.BasePresenter
 
 
 class ${className}Presenter: BasePresenter<${className}View>() {
