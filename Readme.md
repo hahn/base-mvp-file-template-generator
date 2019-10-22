@@ -2,7 +2,7 @@
 Use this plugin to create template files for [BaseMvp](https://github.com/hahn/base-kotlin-mvp) repository.
 
 ## Installation
-1. Create directory ~/.android/templates/other/` if not exist
+1. Create directory `~/.android/templates/other/` if not exist
 2. Copy `BaseMvpTemplate` and `BaseMvpTemplateFragment` to `other` directory
 3. Open (or restart) Android Studio
 4. Open your project that base on [BaseMvp](https://github.com/hahn/base-kotlin-mvp) 
