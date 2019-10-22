@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<template format="4"
+        revision="1"
+        name="BaseMVP Template Adapter"
+        description="Creates a new MVP Adapter">
+
+    <category value="Other"/>
+
+    <parameter id="className"
+        name="Adapter name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="MainAdapter"
+        />
+
+    <parameter
+        id="layoutName"
+        name="Layout Name"
+        type="string"
+        constraints="layout|unique|nonempty"
+        default="adapter_name"
+        suggest="adapter_${classToResource(className)}"
+        help="The name of the layout to create for the adapter" />
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
