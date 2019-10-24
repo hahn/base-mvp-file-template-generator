@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <template format="4"
         revision="1"
-        name="BaseMVP Template Adapter"
+        name="Template Adapter"
         description="Creates a new MVP Adapter">
 
     <category value="Other"/>
@@ -11,6 +11,15 @@
         type="string"
         constraints="class|unique|nonempty"
         default="MainAdapter"
+        help="Don't include Adapter in the name class"
+        />
+
+    <parameter id="pojoName"
+        name="Object (POJO) name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="MyObject"
+        help="Object class for adapter"
         />
 
     <parameter
@@ -18,8 +27,8 @@
         name="Layout Name"
         type="string"
         constraints="layout|unique|nonempty"
-        default="adapter_name"
-        suggest="adapter_${classToResource(className)}"
+        default="item_name"
+        suggest="item_${classToResource(className)}"
         help="The name of the layout to create for the adapter" />
 
     <globals file="globals.xml.ftl" />
